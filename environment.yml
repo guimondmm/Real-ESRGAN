@@ -4,12 +4,12 @@ channels:
 - defaults
 dependencies:
 - python>=3.11
-- pytorch>=1.13.1
-- torchvision>=0.14.1
+- pytorch>=1.13.1,<2.2
+- torchvision>=0.14.1,<0.17 # torchvision.transforms.functional_tensor is deprecated in 0.15 and removed in 0.17
 - addict
 - filterpy
 - future
-- numpy
+- numpy<2 # torch.from_numpy requires numpy<2 in pytorch<2.2
 - pillow
 - pip
 - py-opencv
