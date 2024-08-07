@@ -1,3 +1,4 @@
+#!/usr/bin/env conda run -n real-esrgan python
 # flake8: noqa
 # This file is used for deploying replicate models
 # running: cog predict -i img=@inputs/00017_gray.png -i version='General - v3' -i scale=2 -i face_enhance=True -i tile=0

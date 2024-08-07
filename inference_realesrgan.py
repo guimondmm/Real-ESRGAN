@@ -1,3 +1,4 @@
+#!/usr/bin/env conda run -n real-esrgan python
 import argparse
 import cv2
 import glob
@@ -142,7 +143,7 @@ def main():
             upscale=args.outscale,
             arch='clean',
             channel_multiplier=2,
-            device='cpu', # <--- MPS is not supported yet, crash pas runtime. TODO: FIX THIS
+            device=backend_type, # <--- MPS is not supported yet, crash pas runtime. TODO: FIX THIS
             bg_upsampler=upsampler)
     os.makedirs(args.output, exist_ok=True)
 

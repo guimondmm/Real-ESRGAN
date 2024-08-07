@@ -1,3 +1,4 @@
+#!/usr/bin/env conda run -n real-esrgan python
 import argparse
 import cv2
 import glob
