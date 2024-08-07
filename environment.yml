@@ -1,0 +1,26 @@
+channels:
+- pytorch
+- conda-forge
+- defaults
+dependencies:
+- python>=3.11
+- pytorch>=1.13.1
+- torchvision>=0.14.1
+- addict
+- filterpy
+- future
+- numpy
+- pillow
+- pip
+- py-opencv
+- python-lmdb
+- pyyaml
+- scipy
+- tqdm
+- yapf
+- pip:
+  - git+https://github.com/guimondmm/basicsr.git # basicsr>=1.4.2
+  - git+https://github.com/guimondmm/facexlib.git # facexlib>=0.2.5
+  - git+https://github.com/guimondmm/gfpgan.git # gfpgan>=1.3.8
+  - tb-nightly
+name: real-esrgan
